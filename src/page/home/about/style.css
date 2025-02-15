@@ -1,0 +1,8 @@
+/* Tambahkan z-index di file style.css */
+@layer utilities {
+    .clip-path {
+      clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+      z-index: -1;  /* Pastikan elemen berada di bawah konten */
+    }
+  }
+  
