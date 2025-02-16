@@ -44,10 +44,10 @@ const ProfileCard = ({ img }: cardProps) => {
         alt="Profile"
         className="w-full h-60 object-cover "
       />
-      <div className="absolute top-0 left-0 px-6 py-2 bg-green-900 rounded-br-xl text-white">
+      <div className="absolute top-0 left-0 px-6 py-2 bg-primaryColor rounded-br-xl text-white">
         <p className="text-sm">COO</p>
       </div>
-      <div className="absolute bottom-0 right-0 px-6 py-3 bg-green-900 rounded-tl-xl text-white">
+      <div className="absolute bottom-0 right-0 px-6 py-3 bg-primaryColor rounded-tl-xl text-white">
         <p className="text-sm">Andi Jutawan</p>
       </div>
     </div>
@@ -57,7 +57,7 @@ const ProfileCard = ({ img }: cardProps) => {
 
 const TeamSection = () => {
   return (
-    <section className="bg-green-900 text-white py-16 px-6 font-baloo">
+    <section className="bg-primaryColor text-white py-16 px-6 font-baloo">
       <div className="max-w-7xl mx-auto text-center mb-12">
         <h2 className="text-4xl font-bold">Meet Our Team</h2>
       </div>

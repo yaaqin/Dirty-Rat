@@ -10,7 +10,7 @@ const images = [
 
 export default function GallerySection() {
   return (
-    <section className="flex px-4 gap-4 bg-green-900">
+    <section className="flex px-4 gap-4 bg-primaryColor">
       <div className="flex-1 relative overflow-hidden">
         <img
           src="https://i.pinimg.com/236x/c2/34/40/c234404b725975fe5f181a2d4e346f6f.jpg"

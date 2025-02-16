@@ -39,7 +39,7 @@ export const SliderPartner = () => {
     return () => clearInterval(interval); // Hapus interval saat komponen unmount
   }, [OurProject.length]);
   return (
-    <main className='flex flex-col gap-4 max-w-[1480px] mx-auto bg-green-900 py-24'>
+    <main className='flex flex-col gap-4 max-w-[1480px] mx-auto bg-primaryColor py-24'>
       <h4 className='Text-center text-6xl text-center text-white mb-10 max-w-xl mx-auto font-bold'>Our Clients AND Projects</h4>
       <Slider width="200px" height="200px" quantity={OurProject.length} images={OurProject} reverse={true} />
     </main>

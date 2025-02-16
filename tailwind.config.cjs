@@ -8,6 +8,11 @@ module.exports = {
       fontFamily: {
         baloo: ['Baloo', 'sans-serif'],
       },
+      colors: {
+        primaryColor: "#2b433e",
+        secondaryColor: "#171717",
+        thirdColor: "#2b423e",
+      },
     },
   },
   plugins: [],

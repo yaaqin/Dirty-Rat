@@ -2,7 +2,7 @@ import React from 'react';
 
 const Portfolio = () => {
   return (
-    <section className="relative bg-green-900 py-16 font-baloo">
+    <section className="relative bg-primaryColor py-16 font-baloo">
       <div className="max-w-7xl mx-auto px-6">
         <div className="text-center text-white mb-12">
           <h2 className="text-4xl font-bold">SUBSCRIBE TO OUR PORTFOLIO</h2>

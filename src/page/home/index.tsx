@@ -1,32 +1,32 @@
 import React from 'react'
 import Navbar from './navbar'
-import Slider, { SliderPartner } from './slider'
 import Footer from './footer'
-import Header from './header'
 import About from './about'
 import WelcomeSection from './welcomeSection'
 import OurServices from './ourServices'
 import OwnerList from './ownerList'
-import OurProducts from './ourProduct'
-import Portfolio from './portofolio'
-import GallerySection from './galery'
+import Parallelogram from './jaharGenjang'
+import StudioSection from './studioSection'
 
 export default function Home() {
   return (
     <>
-      <section className="fixed top-0 left-0 w-full z-10">
+      <section className="fixed top-0 left-0 w-full z-20">
         <Navbar />
         <hr />
       </section>
-      <Header />
+      {/* <Header /> */}
+      <StudioSection/>
       {/* <SliderPartner /> */}
       <WelcomeSection />
       <About />
-      <GallerySection/>
+      {/* <GallerySection/> */}
+      <Parallelogram/>
       <OurServices />
       <OwnerList />
-      <Portfolio />
-      <OurProducts />
+      {/* <Portfolio />
+      <OurProducts /> */}
+      <hr/>
       <Footer />
     </>
   )
