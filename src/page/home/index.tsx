@@ -9,6 +9,7 @@ import OurServices from './ourServices'
 import OwnerList from './ownerList'
 import OurProducts from './ourProduct'
 import Portfolio from './portofolio'
+import GallerySection from './galery'
 
 export default function Home() {
   return (
@@ -18,9 +19,10 @@ export default function Home() {
         <hr />
       </section>
       <Header />
-      <SliderPartner />
-      <About />
+      {/* <SliderPartner /> */}
       <WelcomeSection />
+      <About />
+      <GallerySection/>
       <OurServices />
       <OwnerList />
       <Portfolio />

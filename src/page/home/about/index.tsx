@@ -1,6 +1,8 @@
 import React, { useRef } from 'react';
 import './style.css'
 import useGsapScrollTrigger from '../../../hook/gsap';
+import witchImg from '../../../assets/img/witch.jpg';
+
 
 const About = () => {
   const leftRef = useRef<HTMLDivElement>(null);
@@ -12,7 +14,7 @@ const About = () => {
   // Gunakan hook untuk bagian kanan (geser dari kanan)
   useGsapScrollTrigger(rightRef, 'right');
   return (
-    <section className="relative bg-green-900 text-white py-16 px-6 z-10">
+    <section className="relative bg-green-900 text-white py-16 px-6 z-0 font-baloo">
       {/* Efek Slicing */}
       <div className="max-w-7xl mx-auto flex gap-24 flex-col md:flex-row items-start relative z-10">
         {/* Left side text */}
@@ -30,7 +32,7 @@ const About = () => {
         {/* Right side image */}
         <div ref={rightRef} className="md:w-1/2 mt-8 md:mt-0">
           <img
-            src="https://i.pinimg.com/236x/c6/a7/a5/c6a7a5138313c2825a1f5e9bff0b7fc9.jpg"
+            src={witchImg}
             alt="dirty rat Studio"
             className="w-full h-auto rounded-lg shadow-lg"
           />

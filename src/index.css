@@ -2,3 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
+@import url('@fortawesome/fontawesome-free/css/all.min.css');
+
+@font-face {
+    font-family: 'Baloo';
+    src: url('/src/assets/font/BalooDa-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
