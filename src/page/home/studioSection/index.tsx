@@ -5,7 +5,7 @@ import { useNavigate } from 'react-router-dom';
 const StudioSection = () => {
   const navigate = useNavigate()
   return (
-    <section className=" pt-64 font-droidSans flex z-0 flex-col justify-center items-center bg-black text-start text-white px-6 py-12">
+    <section className=" font-droidSans flex z-0 flex-col justify-center items-center bg-black text-start text-white px-6 py-12">
       {/* Efek Slicing */}
       <div className="mx-auto flex flex-col gap-0 md:gap-12 md:flex-row items-start relative z-10">
         {/* Left side text */}
