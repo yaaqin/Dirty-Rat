@@ -7,11 +7,12 @@ module.exports = {
     extend: {
       fontFamily: {
         baloo: ['Baloo', 'sans-serif'],
+        droidSans: ['DroidSans', 'sans-serif'],
       },
       colors: {
-        primaryColor: "#2b433e",
+        primaryColor: "#2B433E",
         secondaryColor: "#171717",
-        thirdColor: "#2b423e",
+        textColor: "#3DA264",
       },
     },
   },

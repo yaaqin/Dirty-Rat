@@ -1,42 +1,12 @@
 import React from 'react';
+import { ownerData } from '../../../data/ownerlist';
 
 interface cardProps {
+  nama: string
   img: string
 }
-// Dummy data for team members
-const teamMembers = [
-  {
-    id: 1,
-    name: "Mike Vasilev",
-    role: "CEO",
-    image: "https://i.pinimg.com/236x/68/1b/67/681b675f0c5f833f0e7fa84dad78a82e.jpg", // Ganti dengan URL gambar sesuai
-  },
-  {
-    id: 2,
-    name: "Yuliya Dikun",
-    role: "CVO",
-    image: "https://i.pinimg.com/236x/2a/07/36/2a0736b064272c56efdd8b482448964e.jpg", // Ganti dengan URL gambar sesuai
-  },
-  {
-    id: 3,
-    name: "Konstantin Ilyin",
-    role: "COO",
-    image: "https://i.pinimg.com/236x/dc/f6/b3/dcf6b3dde40619bf4c0b6dfbf2b9960a.jpg", // Ganti dengan URL gambar sesuai
-  },
-  {
-    id: 1,
-    name: "Mike Vasilev",
-    role: "CEO",
-    image: "https://i.pinimg.com/236x/68/1b/67/681b675f0c5f833f0e7fa84dad78a82e.jpg", // Ganti dengan URL gambar sesuai
-  },
-  {
-    id: 2,
-    name: "Yuliya Dikun",
-    role: "CVO",
-    image: "https://i.pinimg.com/236x/2a/07/36/2a0736b064272c56efdd8b482448964e.jpg", // Ganti dengan URL gambar sesuai
-  },
-];
-const ProfileCard = ({ img }: cardProps) => {
+
+const ProfileCard = ({ img, nama }: cardProps) => {
   return (
     <div className="relative">
       <img
@@ -48,7 +18,7 @@ const ProfileCard = ({ img }: cardProps) => {
         <p className="text-sm">COO</p>
       </div>
       <div className="absolute bottom-0 right-0 px-6 py-3 bg-primaryColor rounded-tl-xl text-white">
-        <p className="text-sm">Andi Jutawan</p>
+        <p className="text-sm capitalize">{nama}</p>
       </div>
     </div>
 
@@ -57,13 +27,13 @@ const ProfileCard = ({ img }: cardProps) => {
 
 const TeamSection = () => {
   return (
-    <section className="bg-primaryColor text-white py-16 px-6 font-baloo">
+    <section className="bg-primaryColor text-white py-16 px-6 font-droidSans">
       <div className="max-w-7xl mx-auto text-center mb-12">
         <h2 className="text-4xl font-bold">Meet Our Team</h2>
       </div>
       <div className="flex gap-6 flex-wrap justify-center">
-      {teamMembers.map((member) => (
-          <ProfileCard img={member.image} />
+      {ownerData.map((member) => (
+          <ProfileCard img={member.profile} nama={member.nama} />
         ))}
       </div>
     </section>

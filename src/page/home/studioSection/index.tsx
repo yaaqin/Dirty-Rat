@@ -3,7 +3,7 @@ import ipMan from '../../../assets/img/ipMan.jpg'
 
 const StudioSection = () => {
   return (
-    <section className=" pt-64 font-baloo flex z-0 flex-col justify-center items-center bg-black text-start text-white px-6 py-12">
+    <section className=" pt-64 font-droidSans flex z-0 flex-col justify-center items-center bg-black text-start text-white px-6 py-12">
     {/* Efek Slicing */}
     <div className="max-w-7xl mx-auto flex gap-24 flex-col md:flex-row items-start relative z-10">
       {/* Left side text */}

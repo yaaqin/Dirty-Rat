@@ -16,7 +16,7 @@ export default function MobileNavbar() {
   const navigate = useNavigate()
   const [navOpen, setNavOpen] = useState(false)
   return (
-    <header className="bg-primaryColor text-white py-4 md:py-8 px-6  font-baloo">
+    <header className="bg-primaryColor text-white py-4 md:py-8 px-6  font-droidSans">
       <nav className="mx-auto flex items-center justify-between">
         {/* Navbar Links */}
         <div className="hidden md:flex space-x-8 w-1/3">
@@ -25,7 +25,7 @@ export default function MobileNavbar() {
           <a href="#artstation" className="text-lg text-[#6b7280] hover:text-white hover:underline">Artstation</a>
         </div>
         {/* Logo */}
-        <div className="flex items-center px-auto space-x-4 w-1/2 md:w-1/3 justify-center">
+        <div className="flex items-center px-auto space-x-4 w-1/2 md:w-1/3 justify-start md:justify-center">
           <div className="text-3xl md:text-6xl font-bold text-center">DIRTY RAT</div>
         </div>
 

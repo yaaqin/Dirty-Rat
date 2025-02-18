@@ -16,7 +16,7 @@ const About = () => {
   // Gunakan hook untuk bagian kanan (geser dari kanan)
   useGsapScrollTrigger(rightRef, 'right');
   return (
-    <section className="relative bg-primaryColor text-white py-16 px-6 z-0 font-baloo">
+    <section className="relative bg-primaryColor text-white py-16 px-6 z-0 font-droidSans">
       {/* Efek Slicing */}
       <div className="max-w-7xl mx-auto flex gap-24 flex-col md:flex-row items-start relative z-10">
         {/* Left side text */}
