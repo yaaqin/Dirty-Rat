@@ -1,5 +1,6 @@
 import React from 'react';
 import { ownerData } from '../../../data/ownerlist';
+import logos from '../../../assets/img/logo.png'
 
 interface cardProps {
   nama: string
@@ -28,8 +29,8 @@ const ProfileCard = ({ img, nama }: cardProps) => {
 const TeamSection = () => {
   return (
     <section className="bg-primaryColor text-white py-16 px-6 font-droidSans">
-      <div className="max-w-7xl mx-auto text-center mb-12">
-        <h2 className="text-4xl font-bold">Meet Our Team</h2>
+      <div className="max-w-7xl mx-auto flex justify-center mb-2">
+        <img src={logos} className='h-48'></img>
       </div>
       <div className="flex gap-6 flex-wrap justify-center">
       {ownerData.map((member) => (
