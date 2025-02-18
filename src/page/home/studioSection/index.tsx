@@ -30,7 +30,7 @@ const StudioSection = () => {
           enjoyed by millions of players worldwide.
         </p>
         <div className="relative">
-          <h2 className="text-8xl sm:text-9xl font-bold tracking-wide text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 to-orange-600">
+          <h2 className="font-baloo text-8xl sm:text-9xl font-bold tracking-wide text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 to-orange-600">
             Dirty Rat
           </h2>
         </div>

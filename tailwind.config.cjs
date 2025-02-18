@@ -10,9 +10,9 @@ module.exports = {
         droidSans: ['DroidSans', 'sans-serif'],
       },
       colors: {
-        primaryColor: "#2B433E",
-        secondaryColor: "#171717",
-        textColor: "#3DA264",
+        primaryColor: "#171717",
+        secondaryColor: "#2B433E",
+        textColor: "#CBCBCD",
       },
     },
   },
