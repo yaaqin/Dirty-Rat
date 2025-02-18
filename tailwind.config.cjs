@@ -13,6 +13,7 @@ module.exports = {
         primaryColor: "#171717",
         secondaryColor: "#2B433E",
         textColor: "#CBCBCD",
+        textSecondColor: "#a77f55",
       },
     },
   },

@@ -9,11 +9,11 @@ interface cardProps {
 
 const ProfileCard = ({ img, nama }: cardProps) => {
   return (
-    <div className="relative">
+    <div className="relative filter grayscale hover:grayscale-0 transition-all duration-300 overflow-hidden">
       <img
         src={img}
         alt="Profile"
-        className="w-full h-60 object-cover "
+        className="w-full h-60 object-cover transform transition duration-500 ease-in-out hover:scale-110"
       />
       <div className="absolute top-0 left-0 px-6 py-2 bg-primaryColor rounded-br-xl text-white">
         <p className="text-sm">COO</p>
@@ -33,7 +33,7 @@ const TeamSection = () => {
         <img src={logos} className='h-48'></img>
       </div>
       <div className="flex gap-6 flex-wrap justify-center">
-      {ownerData.map((member) => (
+        {ownerData.map((member) => (
           <ProfileCard img={member.profile} nama={member.nama} />
         ))}
       </div>

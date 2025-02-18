@@ -3,6 +3,7 @@ import { FaFacebookF, FaInstagram, FaTwitter } from 'react-icons/fa';
 import { useNavigate } from 'react-router-dom';
 import ComponentMobile from './mobileNav';
 import logo from '../../../assets/img/logo.png'
+import { artStation, facebook, instagram, twitter } from '../../../data/link';
 interface SocialIconProps {
   href: string;
   icon: React.ReactNode;
@@ -21,23 +22,21 @@ export default function MobileNavbar() {
       <nav className="mx-auto flex items-center justify-between">
         {/* Navbar Links */}
         <div className="hidden md:flex space-x-8 w-1/3">
-          <a href="#" className="text-lg text-[#6b7280] hover:text-white hover:underline" onClick={() => navigate('/')}>Home</a>
-          <a className="text-lg text-[#6b7280] hover:text-white hover:underline" onClick={() => navigate('/contact')}>Contact</a>
-          <a href="#artstation" className="text-lg text-[#6b7280] hover:text-white hover:underline">Artstation</a>
+          <a className="text-lg text-[#6b7280] hover:text-white cursor-pointer hover:underline" onClick={() => navigate('/')}>Home</a>
+          <a className="text-lg text-[#6b7280] hover:text-white cursor-pointer hover:underline" onClick={() => navigate('/contact')}>Contact</a>
+          <a href={artStation} className="text-lg text-[#6b7280] cursor-pointer hover:text-white hover:underline">Artstation</a>
         </div>
         {/* Logo */}
         <div className="flex md:hidden items-center px-auto space-x-4 w-1/2 md:w-1/3 justify-start md:justify-center">
           <div className="text-3xl md:text-6xl font-bold text-center font-baloo text-textColor">DIRTY RAT</div>
         </div>
-        <section className='absolute hidden md:flex w-full justify-center'>
-          <img src={logo} className='h-64 mx-auto mt-16' />
-        </section>
+        
 
         {/* Social Icons */}
         <div className="hidden md:flex justify-center md:justify-end gap-6 items-center w-1/3">
-          <SocialIcon href="#" icon={<FaTwitter size={24} />} />
-          <SocialIcon href="#" icon={<FaFacebookF size={24} />} />
-          <SocialIcon href="#" icon={<FaInstagram size={24} />} />
+          <SocialIcon href={twitter} icon={<FaTwitter size={24} />} />
+          <SocialIcon href={facebook} icon={<FaFacebookF size={24} />} />
+          <SocialIcon href={instagram} icon={<FaInstagram size={24} />} />
           {/* <SocialIcon href="#" icon={<FaYoutube size={24} />} /> */}
         </div>
 
@@ -54,6 +53,9 @@ export default function MobileNavbar() {
           )}
         </section>
       </nav>
+      <section className="absolute hidden md:flex w-full justify-center z-0">
+          <img src={logo} className="h-64 mx-auto -mt-24 filter grayscale" />
+        </section>
       {navOpen && <ComponentMobile />}
     </header>
   )

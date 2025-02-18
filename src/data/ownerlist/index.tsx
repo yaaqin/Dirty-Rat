@@ -6,7 +6,7 @@ import christ from '../../assets/img/ownerList/christ.png'
 
 export const ownerData = [
     {
-        nama: 'andi jutawan',
+        nama: 'andi',
         profile: andis
     },
     {

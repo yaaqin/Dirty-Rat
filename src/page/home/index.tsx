@@ -7,6 +7,7 @@ import OurServices from './ourServices'
 import OwnerList from './ownerList'
 import StudioSection from './studioSection'
 import Sample from '../../assets/img/ownerList/banner2.jpg'
+import OurServicesType from './ourServicesType'
 
 export default function Home() {
   return (
@@ -16,18 +17,19 @@ export default function Home() {
         <hr />
       </section>
       {/* <Header /> */}
-      <StudioSection/>
+      <StudioSection />
       {/* <SliderPartner /> */}
       <WelcomeSection />
-      <About />
+      {/* <About /> */}
       {/* <GallerySection/> */}
       {/* <Parallelogram/> */}
-      <img src={Sample} className='w-full'/>
+      <img src={Sample} className='w-full' />
       <OurServices />
+      <OurServicesType />
       <OwnerList />
       {/* <Portfolio />
       <OurProducts /> */}
-      <hr/>
+      <hr />
       <Footer />
     </>
   )
