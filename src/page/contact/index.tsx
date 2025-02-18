@@ -10,7 +10,7 @@ export default function Contact() {
                 <Navbar />
                 <hr />
             </section>
-            <MainComponent/>
+            <MainComponent />
             <Footer />
         </>
     )

@@ -1,8 +1,9 @@
 import React from 'react';
+import logos from '../../../assets/img/logo.png'
 
 const Footer = () => {
   return (
-    <footer className="bg-primaryColor text-white py-6 font-droidSans">
+    <footer className="bg-primaryColor text-textColor py-2 font-droidSans">
       <div className="mt-8 max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center">
         {/* Social Media Icons
         <div className="flex space-x-6 mb-4 md:mb-0">
@@ -20,13 +21,12 @@ const Footer = () => {
         {/* Footer Text */}
         <div className="text-center mb-4 md:mb-0">
           <p className="text-sm">
-            <a href="https://www.dekogon.com" target="_blank" rel="noopener noreferrer" className="hover:underline">www.dirtyrat.com</a>
+            <a href="https://www.dirtyrat.com" target="_blank" rel="noopener noreferrer" className="hover:underline">www.dirtyrat.com</a>
           </p>
           <p className="text-sm">&copy; Dirty Rat Studios LLC</p>
         </div>
 
-        <img src='https://media.discordapp.net/attachments/1037202376496517161/1339268336177123398/dirtyrat_logo_1.png?ex=67b16615&is=67b01495&hm=9c068b9c78267d7d94910ea5522775836440e793972e3e3fc0bb5f0c24ea8748&=&format=webp&quality=lossless&width=233&height=233'
-        className='h-36'></img>
+        <img src={logos} className='h-48'></img>
 
         {/* Links Section */}
         <div className="space-x-6 text-center">

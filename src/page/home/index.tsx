@@ -5,8 +5,8 @@ import About from './about'
 import WelcomeSection from './welcomeSection'
 import OurServices from './ourServices'
 import OwnerList from './ownerList'
-import Parallelogram from './jaharGenjang'
 import StudioSection from './studioSection'
+import Sample from '../../assets/img/ownerList/banner2.jpg'
 
 export default function Home() {
   return (
@@ -21,7 +21,8 @@ export default function Home() {
       <WelcomeSection />
       <About />
       {/* <GallerySection/> */}
-      <Parallelogram/>
+      {/* <Parallelogram/> */}
+      <img src={Sample} className='w-full'/>
       <OurServices />
       <OwnerList />
       {/* <Portfolio />

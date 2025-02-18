@@ -14,7 +14,7 @@ const Services = () => {
     <section className="bg-primaryColor text-white py-16 px-6 font-droidSans">
       <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center">
         {/* Left side text */}
-        <div ref={rightRef} className="md:w-1/2 flex flex-wrap justify-start gap-4">
+        <div ref={rightRef} className="md:w-1/2 flex flex-wrap justify-start gap-4 mb-8 md:mb-0">
           <img 
             src="https://i.pinimg.com/236x/4b/68/38/4b6838bcd40d6b0d497e569e1cc71e59.jpg" 
             alt="Service Image 1"
