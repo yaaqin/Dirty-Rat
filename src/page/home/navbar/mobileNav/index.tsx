@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { FaInstagram, FaTwitter, FaArtstation } from 'react-icons/fa';
 import { useNavigate } from 'react-router-dom';
+import { artStation, instagram, twitter } from '../../../../data/link';
 
 const ComponentMobile = () => {
   const [show, setShow] = useState(false);
@@ -8,7 +9,7 @@ const ComponentMobile = () => {
 
   useEffect(() => {
     // Mengatur waktu delay agar transisi muncul setelah beberapa detik
-    setTimeout(() => setShow(true), 100); // Delay transisi 100ms setelah render
+    setTimeout(() => setShow(true), 200); // Delay transisi 100ms setelah render
   }, []);
 
   return (
@@ -20,20 +21,20 @@ const ComponentMobile = () => {
         >
           <p onClick={() =>navigate('/')} className="text-xl hover:underline cursor-pointer font-bold">HOME</p>
           <p onClick={() =>navigate('/contact')} className="text-xl hover:underline cursor-pointer font-bold">CONTACT</p>
-          <p className="text-xl hover:underline cursor-pointer font-bold">ARTSTATION</p>
+          <p className="text-xl hover:underline cursor-pointer font-bold mt-2"><a href={artStation}>ARTSTATION</a></p>
         </div>
 
         {/* Ikon Sosial Media */}
         <div
           className={`mt-52 space-x-6 flex justify-center  ${show ? 'transform translate-y-0 opacity-100' : 'transform translate-y-8 opacity-0'} transition-all duration-700`}
         >
-          <a href="#" className="text-blue-400">
+          <a href={instagram} className="text-blue-400">
             <FaInstagram size={24} />
           </a>
-          <a href="#" className="text-blue-400">
+          <a href={twitter} className="text-blue-400">
             <FaTwitter size={24} />
           </a>
-          <a href="#" className="text-blue-400">
+          <a href={artStation} className="text-blue-400">
             <FaArtstation size={24} />
           </a>
         </div>

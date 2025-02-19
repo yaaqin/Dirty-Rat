@@ -28,7 +28,7 @@ const ProfileCard = ({ img, nama }: cardProps) => {
 
 const TeamSection = () => {
   return (
-    <section className="bg-primaryColor h-screen flex items-center text-white py-16 px-6 font-droidSans">
+    <section className="bg-primaryColor h-auto flex items-center text-white py-16 px-6 font-droidSans">
       {/* <div className="max-w-7xl mx-auto flex justify-center mb-2">
         <img src={logos} className='h-48'></img>
       </div> */}

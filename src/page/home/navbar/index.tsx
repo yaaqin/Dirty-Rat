@@ -18,7 +18,7 @@ export default function MobileNavbar() {
   const navigate = useNavigate()
   const [navOpen, setNavOpen] = useState(false)
   return (
-    <header className="bg-primaryColor text-white py-4 md:py-8 px-6 font-droidSans">
+    <header className="bg-primaryColor text-white py-4 md:py-8 px-6 md:px-16 font-droidSans">
       <nav className="mx-auto flex items-center justify-between">
         {/* Navbar Links */}
         <div className="hidden md:flex space-x-8 w-1/3">
@@ -53,7 +53,7 @@ export default function MobileNavbar() {
           )}
         </section>
       </nav>
-      <section className="absolute hidden md:flex w-full justify-center z-0">
+      <section className="absolute hidden md:flex w-full justify-center z-0 -ml-16">
           <img src={logo} className="h-64 mx-auto -mt-24 filter grayscale" />
         </section>
       {navOpen && <ComponentMobile />}
