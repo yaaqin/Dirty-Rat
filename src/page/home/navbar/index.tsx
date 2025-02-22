@@ -22,15 +22,16 @@ export default function MobileNavbar() {
       <nav className="mx-auto flex items-center justify-between">
         {/* Navbar Links */}
         <div className="hidden md:flex space-x-8 w-1/3">
-          <a className="text-lg text-[#6b7280] hover:text-white cursor-pointer hover:underline" onClick={() => navigate('/')}>Home</a>
-          <a className="text-lg text-[#6b7280] hover:text-white cursor-pointer hover:underline" onClick={() => navigate('/contact')}>Contact</a>
-          <a href={artStation} className="text-lg text-[#6b7280] cursor-pointer hover:text-white hover:underline">Artstation</a>
+          <a className="text-lg text-[#6b7280] hover:text-white cursor-pointer hover:underline font-bold font-poppins" onClick={() => navigate('/')}>Home</a>
+          <a className="text-lg text-[#6b7280] hover:text-white cursor-pointer hover:underline font-bold font-poppins" onClick={() => navigate('/contact')}>Contact</a>
+          <a href={artStation} className="text-lg text-[#6b7280] cursor-pointer hover:text-white hover:underline font-bold font-poppins">Artstation</a>
         </div>
+
         {/* Logo */}
         <div className="flex md:hidden items-center px-auto space-x-4 w-1/2 md:w-1/3 justify-start md:justify-center">
           <div className="text-3xl md:text-6xl font-bold text-center font-baloo text-textColor">DIRTY RAT</div>
         </div>
-        
+
 
         {/* Social Icons */}
         <div className="hidden md:flex justify-center md:justify-end gap-6 items-center w-1/3">
@@ -54,8 +55,8 @@ export default function MobileNavbar() {
         </section>
       </nav>
       <section className="absolute hidden md:flex w-full justify-center z-0 -ml-16">
-          <img src={logo} className="h-64 mx-auto -mt-24 filter grayscale" />
-        </section>
+        <img src={logo} className="h-64 mx-auto -mt-24 filter grayscale" />
+      </section>
       {navOpen && <ComponentMobile />}
     </header>
   )

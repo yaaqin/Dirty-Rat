@@ -8,6 +8,7 @@ module.exports = {
       fontFamily: {
         baloo: ['Baloo', 'sans-serif'],
         droidSans: ['DroidSans', 'sans-serif'],
+        poppins: ['Poppins', 'sans-serif'],
       },
       colors: {
         primaryColor: "#171717",

@@ -11,7 +11,9 @@ export default function Contact() {
                 <hr />
             </section>
             <MainComponent />
+            {/* <section className='relative'>
             <Footer />
+            </section> */}
         </>
     )
 }

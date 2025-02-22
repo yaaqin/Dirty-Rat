@@ -3,148 +3,95 @@ import './style.css'
 import car2 from '../../../assets/img/car2.png'
 export default function MainComponent() {
     return (
-        <section className='pt-10 md:pt-20'>   
-        <img src={car2} alt="" className='h-screen w-full object-cover' /> 
+        <section className='pt-10 md:pt-20 relative'>
+            <img src={car2} alt="" className="min-h-screen w-full object-cover absolute z-0 filter blur-sm" />
+            <section className='w-full flex justify-center pt-2'>
+                <div className="mt-8 md:mt-36 p-4 md:p-8 absolute flex flex-col md:flex-row gap-10 mx-auto w-full">
+                    <div className="px-0 md:p-8 text-white flex-1">
+                        <p className='font-baloo text-4xl'>Contact Us</p>
+                        <div className="max-w-4xl mx-auto space-y-6 mt-8">
+                            <div>
+                                <p className="font-semibold">General Inquiries</p>
+                                <a href="mailto:contact@dekogon.com" className="text-sm">contact@dirtyratstudio.com</a>
+                            </div>
+                            <div>
+                                <p className="font-semibold">New Business Inquiries</p>
+                                <a href="mailto:inquiries@dekogon.com" className="text-sm">inquiries@dirtyratstudio.com</a>
+                            </div>
+                            <div>
+                                <p className="font-semibold">Dekogon Studios</p>
+                                <a href="https://www.dirtyratstudio.com" className="text-sm" target="_blank" rel="noopener noreferrer">www.dirtyratstudio.com</a>
+                            </div>
+                            <div>
+                                <p className="font-semibold">Jakarta, Indonesia</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div className="px-0 md:p-8 text-white flex-1">
+                        <div className="max-w-4xl mx-auto p-0 rounded-lg">
+                            <div className="space-y-2 md:space-y-6">
+                                {/* Name */}
+                                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                                    <div>
+                                        <label htmlFor="firstName" className="block text-sm text-shadow-md font-medium text-white">First Name</label>
+                                        <input
+                                            type="text"
+                                            id="firstName"
+                                            className="mt-1 text-black block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
+                                            placeholder="First Name"
+                                            required
+                                        />
+                                    </div>
+                                    <div>
+                                        <label htmlFor="lastName" className="block text-sm text-shadow-md font-medium text-white">Last Name</label>
+                                        <input
+                                            type="text"
+                                            id="lastName"
+                                            className="mt-1 text-black block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
+                                            placeholder="Last Name"
+                                            required
+                                        />
+                                    </div>
+                                </div>
+
+                                {/* Email */}
+                                <div>
+                                    <label htmlFor="email" className="block text-sm text-shadow-md font-medium text-white">Email</label>
+                                    <input
+                                        type="email"
+                                        id="email"
+                                        className="mt-1 text-black block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
+                                        placeholder="Email"
+                                        required
+                                    />
+                                </div>
+
+                                {/* Message */}
+                                <div>
+                                    <label htmlFor="message" className="block text-sm text-shadow-md font-medium text-white">Message</label>
+                                    <textarea
+                                        id="message"
+                                        className="mt-1 text-black block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
+                                        placeholder="Your message here"
+                                        required
+                                    ></textarea>
+                                </div>
+
+                                {/* Submit Button */}
+                                <div>
+                                    <button
+                                        type="submit"
+                                        className="w-full bg-secondaryColor text-white py-2 px-4 rounded-md hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-opacity-50"
+                                    >
+                                        Send
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
         </section>
-        // <div className="p-8 rounded-lg absolute shadow-lg">
-        //     <h3 className="text-xl font-semibold mb-4">Don't Hesitate Any More</h3>
-        //     <p className="mb-6">Get In Touch With Us</p>
-
-        //     <form action="#" method="POST" className="space-y-4">
-        //         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-        //             {/* Name Input */}
-        //             <div className="relative">
-        //                 <input
-        //                     type="text"
-        //                     placeholder="Your Name"
-        //                     className="w-full px-4 py-3 border rounded-lg text-gray-700"
-        //                 />
-        //                 <div className="absolute right-4 top-1/2 transform -translate-y-1/2 text-gray-400">
-        //                     <svg
-        //                         xmlns="http://www.w3.org/2000/svg"
-        //                         className="h-5 w-5"
-        //                         fill="none"
-        //                         viewBox="0 0 24 24"
-        //                         stroke="currentColor"
-        //                     >
-        //                         <path
-        //                             strokeLinecap="round"
-        //                             strokeLinejoin="round"
-        //                             strokeWidth="2"
-        //                             d="M5.121 17.804A4.992 4.992 0 015 14c0-1.657.672-3.157 1.764-4.243A6.985 6.985 0 0012 7c1.657 0 3.157.672 4.243 1.764A6.985 6.985 0 0019 14c0 1.657-.672 3.157-1.764 4.243A6.985 6.985 0 0012 21a6.985 6.985 0 01-4.243-1.764A4.992 4.992 0 015.121 17.8z"
-        //                         />
-        //                     </svg>
-        //                 </div>
-        //             </div>
-
-        //             {/* Email Input */}
-        //             <div className="relative">
-        //                 <input
-        //                     type="email"
-        //                     placeholder="Your E-mail"
-        //                     className="w-full px-4 py-3 border rounded-lg text-gray-700"
-        //                 />
-        //                 <div className="absolute right-4 top-1/2 transform -translate-y-1/2 text-gray-400">
-        //                     <svg
-        //                         xmlns="http://www.w3.org/2000/svg"
-        //                         className="h-5 w-5"
-        //                         fill="none"
-        //                         viewBox="0 0 24 24"
-        //                         stroke="currentColor"
-        //                     >
-        //                         <path
-        //                             strokeLinecap="round"
-        //                             strokeLinejoin="round"
-        //                             strokeWidth="2"
-        //                             d="M16 12V8a4 4 0 10-8 0v4M4 12h16M4 12v4a4 4 0 008 0v-4m0 0v4"
-        //                         />
-        //                     </svg>
-        //                 </div>
-        //             </div>
-        //         </div>
-
-        //         {/* Company Name Input */}
-        //         <div className="relative">
-        //             <input
-        //                 type="text"
-        //                 placeholder="Company Name"
-        //                 className="w-full px-4 py-3 border rounded-lg text-gray-700"
-        //             />
-        //             <div className="absolute right-4 top-1/2 transform -translate-y-1/2 text-gray-400">
-        //                 <svg
-        //                     xmlns="http://www.w3.org/2000/svg"
-        //                     className="h-5 w-5"
-        //                     fill="none"
-        //                     viewBox="0 0 24 24"
-        //                     stroke="currentColor"
-        //                 >
-        //                     <path
-        //                         strokeLinecap="round"
-        //                         strokeLinejoin="round"
-        //                         strokeWidth="2"
-        //                         d="M8 12v4M12 12v4m4-4v4M4 6h16M4 10h16M4 14h16M4 18h16"
-        //                     />
-        //                 </svg>
-        //             </div>
-        //         </div>
-
-        //         {/* Your Topic Input */}
-        //         <div className="relative">
-        //             <input
-        //                 type="text"
-        //                 placeholder="Your Topic"
-        //                 className="w-full px-4 py-3 border rounded-lg text-gray-700"
-        //             />
-        //             <div className="absolute right-4 top-1/2 transform -translate-y-1/2 text-gray-400">
-        //                 <svg
-        //                     xmlns="http://www.w3.org/2000/svg"
-        //                     className="h-5 w-5"
-        //                     fill="none"
-        //                     viewBox="0 0 24 24"
-        //                     stroke="currentColor"
-        //                 >
-        //                     <path
-        //                         strokeLinecap="round"
-        //                         strokeLinejoin="round"
-        //                         strokeWidth="2"
-        //                         d="M5 12l5 5L20 7"
-        //                     />
-        //                 </svg>
-        //             </div>
-        //         </div>
-
-        //         {/* Your Message Input */}
-        //         <div className="relative">
-        //             <textarea
-        //                 placeholder="Your Message"
-        //                 className="w-full px-4 py-3 border rounded-lg text-gray-700 h-32"
-        //             ></textarea>
-        //             <div className="absolute right-4 top-1/2 transform -translate-y-1/2 text-gray-400">
-        //                 <svg
-        //                     xmlns="http://www.w3.org/2000/svg"
-        //                     className="h-5 w-5"
-        //                     fill="none"
-        //                     viewBox="0 0 24 24"
-        //                     stroke="currentColor"
-        //                 >
-        //                     <path
-        //                         strokeLinecap="round"
-        //                         strokeLinejoin="round"
-        //                         strokeWidth="2"
-        //                         d="M4 4h16M4 8h16M4 12h16M4 16h16M4 20h16"
-        //                     />
-        //                 </svg>
-        //             </div>
-        //         </div>
-
-        //         {/* Submit Button */}
-        //         <button
-        //             type="submit"
-        //             className="w-full py-3 bg-transparent border border-blue-500 text-blue-500 font-semibold rounded-lg hover:bg-blue-500 hover:text-white transition-all"
-        //         >
-        //             Submit Now
-        //         </button>
-        //     </form>
-        // </div>
     )
 }

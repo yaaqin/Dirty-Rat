@@ -1,7 +1,6 @@
 import React from 'react'
 import Navbar from './navbar'
 import Footer from './footer'
-import About from './about'
 import WelcomeSection from './welcomeSection'
 import OurServices from './ourServices'
 import OwnerList from './ownerList'
