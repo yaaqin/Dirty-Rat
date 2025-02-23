@@ -13,7 +13,7 @@ const Services = () => {
   // Gunakan hook untuk bagian kanan (geser dari kanan)
   useGsapScrollTrigger(rightRef, 'right');
   return (
-    <section className="bg-primaryColor text-white py-16 px-6 font-droidSans">
+    <section className="bg-primaryColor text-white py-16 px-6 font-droidSans -mt-12">
       <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center">
         {/* Left side text */}
         <div ref={rightRef} className="flex flex-wrap justify-start gap-4 mb-8 md:mb-0">

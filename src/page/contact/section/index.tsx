@@ -20,9 +20,9 @@ export default function MainComponent() {
       
       const handleSubmit = async (e: React.FormEvent) => {
         e.preventDefault();
-        setLoading(true)
         try {
-          // Kirim email
+            // Kirim email
+            setLoading(true)
           await sendEmail(formData);
       
           // Reset formData ke nilai default setelah pengiriman email berhasil

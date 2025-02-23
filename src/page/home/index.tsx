@@ -10,25 +10,25 @@ import OurServicesType from './ourServicesType'
 export default function Home() {
   return (
     <>
-      <section className="fixed top-0 left-0 w-full z-20">
+      <section className="fixed top-0 left-0 w-full z-50">
         <Navbar />
         <hr />
       </section>
-      {/* <Header /> */}
       <StudioSection />
-      {/* <SliderPartner /> */}
       <WelcomeSection />
-      {/* <About /> */}
-      {/* <GallerySection/> */}
-      {/* <Parallelogram/> */}
       <OurServices />
       <OurServicesType />
       <img src={Sample} className='w-full' />
       <OwnerList />
-      {/* <Portfolio />
-      <OurProducts /> */}
       <hr />
       <Footer />
+      {/* <Header /> */}
+      {/* <SliderPartner /> */}
+      {/* <About /> */}
+      {/* <GallerySection/> */}
+      {/* <Parallelogram/> */}
+      {/* <Portfolio />
+      <OurProducts /> */}
     </>
   )
 }
