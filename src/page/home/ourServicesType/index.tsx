@@ -15,7 +15,7 @@ export default function OurServicesType() {
                             <img
                                 src={category.img}
                                 alt={category.name}
-                                className="w-full h-80 object-cover transform transition duration-500 ease-in-out hover:scale-110"
+                                className="w-full h-80 object-cover"
                             />
                             <div className="p-4 text-center">
                                 <h3 className="text-xs sm:text-sm md:text-xl lg:text-2xl font-bold">{category.name}</h3>

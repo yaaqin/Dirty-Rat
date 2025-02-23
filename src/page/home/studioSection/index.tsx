@@ -18,9 +18,9 @@ const StudioSection = () => {
         </div>
 
         {/* Right side image */}
-        <div className="w-full md:w-1/2 m-auto z-10">
+        <div className="w-full md:w-1/2 pt-0 md:pt-48 z-10">
           <h1 className="text-4xl sm:text-5xl md:text-8xl text-textSecondColor font-bold mb-6">
-            About Us
+            ABOUT US
           </h1>
           <p className="text-lg sm:text-xl mb-12 text-textSecondColor">
           Dirty Rat Studio is a collective of dedicated artists specializing in high-quality character creation, hard surface and organic modeling, and environment design for AAA games and premium collectibles.

@@ -16,16 +16,16 @@ const Services = () => {
     <section className="bg-primaryColor text-white py-16 px-6 font-droidSans">
       <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center">
         {/* Left side text */}
-        <div ref={rightRef} className="md:w-1/2 flex flex-wrap justify-start gap-4 mb-8 md:mb-0">
+        <div ref={rightRef} className="flex flex-wrap justify-start gap-4 mb-8 md:mb-0">
           <img 
             src={goh1} 
             alt="Service Image 1"
-            className="object-cover w-1/2 h-64 rounded-lg shadow-lg"
+            className="object-cover w-full md:w-3/4 h-64 rounded-lg shadow-lg"
           />
           <img 
             src={goh2} 
             alt="Service Image 2"
-            className="object-cover w-1/2 h-64 rounded-lg shadow-lg"
+            className="object-cover w-full md:w-3/4 h-64 rounded-lg shadow-lg"
           />
         </div>
 
