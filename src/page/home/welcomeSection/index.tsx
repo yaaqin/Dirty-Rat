@@ -1,11 +1,12 @@
-import React from 'react';
 import videoSrc from '../../../assets/video/Sequence 02.mp4';
 
 export default function WelcomeSection() {
   return (
     <section
       className="bg-primaryColor py-[100px] relative mt-0 md:-mt-24">
+      <section className='absolute w-full top-0 bg-textSecondColor z-40' style={{height: '14%', clipPath: 'polygon(0% 0%, 100% 0%, 0% 100%)' }}></section>
       <section className='absolute w-full -top-1 bg-black z-40' style={{height: '14%', clipPath: 'polygon(0% 0%, 100% 0%, 0% 100%)' }}></section>
+      <section className='absolute w-full bg-textSecondColor z-40 bottom-0' style={{height: '14%', clipPath: 'polygon(100% 0%, 100% 100%, 0% 100%)' }}></section>
       <section className='absolute w-full bg-primaryColor z-40 -bottom-1' style={{height: '14%', clipPath: 'polygon(100% 0%, 100% 100%, 0% 100%)' }}></section>
       {/* <section className='absolute w-full h-24 bottom-0 bg-primaryColor z-40'></section> */}
       <video

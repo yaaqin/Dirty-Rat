@@ -4,21 +4,21 @@ import WelcomeSection from './welcomeSection'
 import OurServices from './ourServices'
 import OwnerList from './ownerList'
 import StudioSection from './studioSection'
-import Sample from '../../assets/img/ownerList/banner2 (1).jpg'
 import OurServicesType from './ourServicesType'
+import PortofolioArtStation from './port0FolioArtStattion'
 
 export default function Home() {
   return (
     <>
       <section className="fixed top-0 left-0 w-full z-50">
         <Navbar />
-        <hr />
+        <hr className='border-textSecondColor'/>
       </section>
       <StudioSection />
       <WelcomeSection />
       <OurServices />
       <OurServicesType />
-      <img src={Sample} className='w-full' />
+      <PortofolioArtStation/>
       <OwnerList />
       <hr />
       <Footer />
