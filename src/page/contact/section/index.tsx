@@ -1,7 +1,25 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './style.css'
 import car2 from '../../../assets/img/car2.png'
+import sendEmail from '../../../service/emailService';
 export default function MainComponent() {
+    const [formData, setFormData] = useState({
+        name: '',
+        email: '',
+        message: '',
+    });
+
+    const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+        const { name, value } = e.target;
+        setFormData((prev) => ({
+            ...prev,
+            [name]: value,
+        }));
+    };
+    const handleSubmit = (e: React.FormEvent) => {
+        e.preventDefault();
+        sendEmail(formData);
+      };
     return (
         <section className='pt-10 md:pt-20 relative'>
             <img src={car2} alt="" className="min-h-screen w-full object-cover absolute z-0 filter blur-sm" />
@@ -32,27 +50,17 @@ export default function MainComponent() {
                         <div className="max-w-4xl mx-auto p-0 rounded-lg">
                             <div className="space-y-2 md:space-y-6">
                                 {/* Name */}
-                                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                                    <div>
-                                        <label htmlFor="firstName" className="block text-sm text-shadow-md font-medium text-white">First Name</label>
-                                        <input
-                                            type="text"
-                                            id="firstName"
-                                            className="mt-1 text-black block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
-                                            placeholder="First Name"
-                                            required
-                                        />
-                                    </div>
-                                    <div>
-                                        <label htmlFor="lastName" className="block text-sm text-shadow-md font-medium text-white">Last Name</label>
-                                        <input
-                                            type="text"
-                                            id="lastName"
-                                            className="mt-1 text-black block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
-                                            placeholder="Last Name"
-                                            required
-                                        />
-                                    </div>
+                                <div>
+                                    <label htmlFor="" className="block text-sm text-shadow-md font-medium text-white">Fullname</label>
+                                    <input
+                                        type="text"
+                                        id="name"
+                                        name="name"
+                                        onChange={handleChange}
+                                        className="mt-1 text-black block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
+                                        placeholder="Fullname"
+                                        required
+                                    />
                                 </div>
 
                                 {/* Email */}
@@ -61,6 +69,8 @@ export default function MainComponent() {
                                     <input
                                         type="email"
                                         id="email"
+                                        name="email"
+                                        onChange={handleChange}
                                         className="mt-1 text-black block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
                                         placeholder="Email"
                                         required
@@ -72,6 +82,9 @@ export default function MainComponent() {
                                     <label htmlFor="message" className="block text-sm text-shadow-md font-medium text-white">Message</label>
                                     <textarea
                                         id="message"
+                                        name="message"
+                                        value={formData.message}
+                                        onChange={handleChange}
                                         className="mt-1 text-black block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
                                         placeholder="Your message here"
                                         required
@@ -82,6 +95,7 @@ export default function MainComponent() {
                                 <div>
                                     <button
                                         type="submit"
+                                        onClick={handleSubmit}
                                         className="w-full bg-secondaryColor text-white py-2 px-4 rounded-md hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-opacity-50"
                                     >
                                         Send

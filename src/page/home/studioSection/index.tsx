@@ -20,7 +20,7 @@ const StudioSection = () => {
         {/* Right side image */}
         <div className="w-full md:w-1/2 m-auto z-10">
           <h1 className="text-4xl sm:text-5xl md:text-8xl text-textSecondColor font-bold mb-6">
-            External <br /> Development Studio
+            About Us
           </h1>
           <p className="text-lg sm:text-xl mb-12 text-textSecondColor">
           Dirty Rat Studio is a collective of dedicated artists specializing in high-quality character creation, hard surface and organic modeling, and environment design for AAA games and premium collectibles.
@@ -33,11 +33,11 @@ const StudioSection = () => {
           <button onClick={() => navigate('/contact')} className="bg-secondaryColor text-white px-6 py-2 rounded-md hover:bg-primaryColor transition duration-300">
             Get in Touch
           </button>
-          <div className="relative mt-12">
+          {/* <div className="relative mt-12">
             <h2 className="font-baloo text-8xl sm:text-9xl font-bold tracking-wide text-transparent bg-clip-text bg-gradient-to-b from-textSecondColor to-orange-600">
               Dirty Rat
             </h2>
-          </div>
+          </div> */}
         </div>
 
       </div>

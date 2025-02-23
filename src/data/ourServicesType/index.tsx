@@ -13,7 +13,7 @@ export const OurServiceTypeList = [
         img: groom
     },
     { 
-        name: 'ENVIRONTMENT',
+        name: 'ENVIRONMENT',
         img: env
     },
     { 

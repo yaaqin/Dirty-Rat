@@ -1,11 +1,10 @@
-import React from 'react'
 import Navbar from './navbar'
 import Footer from './footer'
 import WelcomeSection from './welcomeSection'
 import OurServices from './ourServices'
 import OwnerList from './ownerList'
 import StudioSection from './studioSection'
-import Sample from '../../assets/img/ownerList/banner2.jpg'
+import Sample from '../../assets/img/ownerList/banner2 (1).jpg'
 import OurServicesType from './ourServicesType'
 
 export default function Home() {
@@ -22,9 +21,9 @@ export default function Home() {
       {/* <About /> */}
       {/* <GallerySection/> */}
       {/* <Parallelogram/> */}
-      <img src={Sample} className='w-full' />
       <OurServices />
       <OurServicesType />
+      <img src={Sample} className='w-full' />
       <OwnerList />
       {/* <Portfolio />
       <OurProducts /> */}

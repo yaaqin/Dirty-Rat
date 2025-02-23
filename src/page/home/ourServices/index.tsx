@@ -1,5 +1,7 @@
 import React, { useRef } from 'react';
 import useGsapScrollTrigger from '../../../hook/gsap';
+import goh1 from '../../../assets/img/ourService/christopher-goh-3.jpg'
+import goh2 from '../../../assets/img/ourService/christopher-goh-cam2.jpg'
 
 const Services = () => {
   const leftRef = useRef<HTMLDivElement>(null);
@@ -16,12 +18,12 @@ const Services = () => {
         {/* Left side text */}
         <div ref={rightRef} className="md:w-1/2 flex flex-wrap justify-start gap-4 mb-8 md:mb-0">
           <img 
-            src="https://i.pinimg.com/236x/4b/68/38/4b6838bcd40d6b0d497e569e1cc71e59.jpg" 
+            src={goh1} 
             alt="Service Image 1"
             className="object-cover w-1/2 h-64 rounded-lg shadow-lg"
           />
           <img 
-            src="https://i.pinimg.com/236x/ba/db/42/badb424664b60b8ccf6433a8a43d9499.jpg" 
+            src={goh2} 
             alt="Service Image 2"
             className="object-cover w-1/2 h-64 rounded-lg shadow-lg"
           />
