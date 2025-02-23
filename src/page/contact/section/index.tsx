@@ -3,22 +3,39 @@ import './style.css'
 import car2 from '../../../assets/img/car2.png'
 import sendEmail from '../../../service/emailService';
 export default function MainComponent() {
+    const [loading, setLoading] = useState(false)
     const [formData, setFormData] = useState({
         name: '',
         email: '',
         message: '',
-    });
-
-    const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+      });
+      
+      const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
         const { name, value } = e.target;
         setFormData((prev) => ({
-            ...prev,
-            [name]: value,
+          ...prev,
+          [name]: value,
         }));
-    };
-    const handleSubmit = (e: React.FormEvent) => {
+      };
+      
+      const handleSubmit = async (e: React.FormEvent) => {
         e.preventDefault();
-        sendEmail(formData);
+        setLoading(true)
+        try {
+          // Kirim email
+          await sendEmail(formData);
+      
+          // Reset formData ke nilai default setelah pengiriman email berhasil
+          setFormData({
+            name: '',
+            email: '',
+            message: '',
+          });
+        } catch (error) {
+          console.error("Error sending email:", error);
+        } finally {
+            setLoading(false)
+        }
       };
     return (
         <section className='pt-10 md:pt-20 relative'>
@@ -56,6 +73,7 @@ export default function MainComponent() {
                                         type="text"
                                         id="name"
                                         name="name"
+                                        value={formData.name}
                                         onChange={handleChange}
                                         className="mt-1 text-black block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
                                         placeholder="Fullname"
@@ -70,6 +88,7 @@ export default function MainComponent() {
                                         type="email"
                                         id="email"
                                         name="email"
+                                        value={formData.email}
                                         onChange={handleChange}
                                         className="mt-1 text-black block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
                                         placeholder="Email"
@@ -96,7 +115,7 @@ export default function MainComponent() {
                                     <button
                                         type="submit"
                                         onClick={handleSubmit}
-                                        className="w-full bg-secondaryColor text-white py-2 px-4 rounded-md hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-opacity-50"
+                                        className={`${loading ? 'cursor-wait': 'cursor-pointer'} w-full bg-secondaryColor text-white py-2 px-4 rounded-md hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-opacity-50`}
                                     >
                                         Send
                                     </button>
