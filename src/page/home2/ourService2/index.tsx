@@ -1,4 +1,3 @@
-import React from 'react'
 import car2 from '../../../assets/img/ourService2/5.png'
 
 export default function OurService2() {

@@ -1,6 +1,5 @@
 import Navbar from '../home/navbar'
 import OurServicesType from '../home/ourServicesType'
-import PortofolioArtStation from '../home/port0FolioArtStattion'
 import OwnerList from '../home/ownerList'
 import Footer from '../home/footer'
 import OurService2 from './ourService2'

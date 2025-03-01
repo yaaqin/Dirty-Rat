@@ -1,4 +1,3 @@
-import React from 'react'
 import { OurServiceTypeList } from '../../../data/ourServicesType'
 
 export default function OurServicesType() {
