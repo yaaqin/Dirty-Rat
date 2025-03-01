@@ -2,15 +2,15 @@ import React, { useState } from 'react'
 import { FaFacebookF, FaInstagram, FaTwitter } from 'react-icons/fa';
 import { useNavigate } from 'react-router-dom';
 import ComponentMobile from './mobileNav';
-import logo from '../../../assets/img/logo.png'
+import logo from '../../../assets/img/logo2/dirty rat logo white.png'
 import { artStation, facebook, instagram, twitter } from '../../../data/link';
 interface SocialIconProps {
   href: string;
   icon: React.ReactNode;
 }
 
-const SocialIcon: React.FC<SocialIconProps> = ({ href, icon }) => (
-  <a href={href} className="text-white hover:text-gray-400 transition-colors duration-300">
+ export const SocialIcon: React.FC<SocialIconProps> = ({ href, icon }) => (
+  <a href={href} target="_blank" rel="noopener noreferrer" className="text-white hover:text-gray-400 transition-colors duration-300">
     {icon}
   </a>
 );
@@ -24,7 +24,7 @@ export default function MobileNavbar() {
         <div className="hidden md:flex space-x-8 w-1/3">
           <a className="text-lg text-[#6b7280] hover:text-white cursor-pointer hover:underline font-bold font-poppins" onClick={() => navigate('/')}>Home</a>
           <a className="text-lg text-[#6b7280] hover:text-white cursor-pointer hover:underline font-bold font-poppins" onClick={() => navigate('/contact')}>Contact</a>
-          <a href={artStation} className="text-lg text-[#6b7280] cursor-pointer hover:text-white hover:underline font-bold font-poppins">Artstation</a>
+          <a href={artStation} target="_blank" rel="noopener noreferrer" className="text-lg text-[#6b7280] cursor-pointer hover:text-white hover:underline font-bold font-poppins">Artstation</a>
         </div>
 
         {/* Logo */}

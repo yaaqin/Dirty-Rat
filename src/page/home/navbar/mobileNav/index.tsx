@@ -28,13 +28,13 @@ const ComponentMobile = () => {
         <div
           className={`mt-52 space-x-6 flex justify-center  ${show ? 'transform translate-y-0 opacity-100' : 'transform translate-y-8 opacity-0'} transition-all duration-700`}
         >
-          <a href={instagram} className="text-blue-400">
+          <a href={instagram} className="text-blue-400" target="_blank" rel="noopener noreferrer">
             <FaInstagram size={24} />
           </a>
-          <a href={twitter} className="text-blue-400">
+          <a href={twitter} className="text-blue-400" target="_blank" rel="noopener noreferrer">
             <FaTwitter size={24} />
           </a>
-          <a href={artStation} className="text-blue-400">
+          <a href={artStation} className="text-blue-400" target="_blank" rel="noopener noreferrer">
             <FaArtstation size={24} />
           </a>
         </div>
