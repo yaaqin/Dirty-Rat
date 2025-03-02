@@ -1,4 +1,3 @@
-import React from 'react';
 import ipMan from '../../../assets/img/ipMan.jpg'
 import { useNavigate } from 'react-router-dom';
 

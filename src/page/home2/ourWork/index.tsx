@@ -13,7 +13,7 @@ export default function OurWork() {
             <GradientBar />
             <h6 className="text-center text-4xl mt-8 font-bold">Our Work</h6>
             <section className="w-full flex justify-center my-4">
-                <button className="p-3 px-8 bg-blue-400 rounded-md mx-auto capitalize">View Our Full Artstation portfolio</button>
+                <button className="p-3 px-8 bg-secondaryColor rounded-md mx-auto capitalize">View Our Full Artstation portfolio</button>
             </section>
             <div className="flex flex-wrap justify-center p-4 w-full mt-4">
                 {/* Image Items */}
