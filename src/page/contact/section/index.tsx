@@ -8,35 +8,45 @@ export default function MainComponent() {
         name: '',
         email: '',
         message: '',
-      });
-      
-      const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+    });
+    
+    const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
         const { name, value } = e.target;
         setFormData((prev) => ({
-          ...prev,
-          [name]: value,
+            ...prev,
+            [name]: value,
         }));
-      };
-      
-      const handleSubmit = async (e: React.FormEvent) => {
+    };
+    
+    const handleSubmit = async (e: React.FormEvent) => {
         e.preventDefault();
         try {
             // Kirim email
-            setLoading(true)
-          await sendEmail(formData);
-      
-          // Reset formData ke nilai default setelah pengiriman email berhasil
-          setFormData({
-            name: '',
-            email: '',
-            message: '',
-          });
+            setLoading(true);
+    
+            // Tentukan penerima (to_name), misalnya 'Recipient Name'
+            const to_name = "DirtyRat Admin"; // Ganti dengan nama penerima sesuai kebutuhan
+    
+            // Kirim email melalui EmailJS
+            await sendEmail({
+                from_name: formData.name,
+                to_name: to_name,
+                message: formData.message,
+                user_email: formData.email,
+            });
+    
+            // Reset formData ke nilai default setelah pengiriman email berhasil
+            setFormData({
+                name: '',
+                email: '',
+                message: '',
+            });
         } catch (error) {
-          console.error("Error sending email:", error);
+            console.error("Error sending email:", error);
         } finally {
-            setLoading(false)
+            setLoading(false);
         }
-      };
+    };
     return (
         <section className='pt-10 md:pt-20 relative'>
             <img src={car2} alt="" className="min-h-screen w-full object-cover absolute z-0 filter blur-sm" />
@@ -44,7 +54,7 @@ export default function MainComponent() {
                 <div className="mt-8 md:mt-36 p-4 md:p-8 absolute flex flex-col md:flex-row gap-10 mx-auto w-full">
                     <div className="px-0 md:p-8 text-white flex-1">
                         <p className='font-baloo text-4xl'>Contact Us</p>
-                        <div className="max-w-4xl mx-auto space-y-6 mt-8">
+                        <div className="max-w-4xl mx-auto space-y-6 mt-4 md:mt-8">
                             <div>
                                 <p className="font-semibold">General Inquiries</p>
                                 <a href="mailto:contact@dekogon.com" className="text-sm">contact@dirtyratstudio.com</a>
@@ -63,7 +73,7 @@ export default function MainComponent() {
                         </div>
                     </div>
 
-                    <div className="px-0 md:p-8 text-white flex-1">
+                    <div className="px-0 md:p-8 text-white flex-1 -mt-6 md:mt-0">
                         <div className="max-w-4xl mx-auto p-0 rounded-lg">
                             <div className="space-y-2 md:space-y-6">
                                 {/* Name */}

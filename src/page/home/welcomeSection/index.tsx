@@ -6,7 +6,6 @@ export default function WelcomeSection() {
       className="bg-primaryColor py-[100px] relative mt-0 md:-mt-24 z-20">
       <section className='absolute w-full top-0 bg-textSecondColor z-40' style={{height: '14%', clipPath: 'polygon(0% 0%, 100% 0%, 0% 100%)' }}></section>
       <section className='absolute w-full' style={{height: '14%', clipPath: 'polygon(0% 0%, 100% 0%, 0% 100%)', top: '-0.1rem', backgroundColor: 'black', zIndex: 40}}></section>
-      <hr className='absolute h-16 bg-green-400 z-50 bottom-8'></hr>
       <section className='absolute w-full bg-textSecondColor z-40 bottom-0' style={{height: '14%', clipPath: 'polygon(100% 0%, 100% 100%, 0% 100%)' }}></section>
       <section className='absolute w-full bg-primaryColor z-40' style={{height: '14%', clipPath: 'polygon(100% 0%, 100% 100%, 0% 100%)', bottom: '-0.1rem'}}></section>
       {/* <section className='absolute w-full h-24 bottom-0 bg-primaryColor z-40'></section> */}
