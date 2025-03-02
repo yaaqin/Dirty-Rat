@@ -4,6 +4,8 @@ import OwnerList from '../home/ownerList'
 import Footer from '../home/footer'
 import OurService2 from './ourService2'
 import OurWork from './ourWork'
+import WelcomeSection from '../home/welcomeSection'
+import StudioSection from '../home/studioSection'
 
 export default function Home2() {
   return (
@@ -12,6 +14,10 @@ export default function Home2() {
         <Navbar />
         <hr className='border-textSecondColor'/>
       </section>
+      <StudioSection />
+      <WelcomeSection />
+      {/* <OurServices /> */}
+      {/* <OurServicesType /> */}
       {/* <StudioSection />
       <WelcomeSection />
       <OurServices /> */}
