@@ -3,6 +3,7 @@ import OurServicesType from '../home/ourServicesType'
 import OwnerList from '../home/ownerList'
 import Footer from '../home/footer'
 import OurService2 from './ourService2'
+import OurWork from './ourWork'
 
 export default function Home2() {
   return (
@@ -17,6 +18,7 @@ export default function Home2() {
       <OurService2/>
       <OurServicesType />
       {/* <PortofolioArtStation/> */}
+      <OurWork/>
       <OwnerList />
       <hr />
       <Footer />
