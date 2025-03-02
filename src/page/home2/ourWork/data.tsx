@@ -30,6 +30,9 @@ import img29 from '../../../assets/img/ourWork/witch/christopher-goh-leo.jpg'
 import img30 from '../../../assets/img/ourWork/witch/christopher-goh-tes.jpg'
 import img31 from '../../../assets/img/ourWork/witch/christopher-goh-wbitch.jpg'
 import img32 from '../../../assets/img/ourWork/witch/christopher-goh-witchbitch.jpg'
+import img33 from '../../../assets/img/ourWork/violet/2.jpg'
+import img34 from '../../../assets/img/ourWork/christopher-goh-cam2 (1).jpg'
 
 export const OurWorkData = [img1, img2, img3, img4, img5, img6, img7, img8, img9, img10, img11, img12, img13, img14, img15, img16, img17, img18, img19, img20, img21, img22, img23, img24, img25, img26, img27, img28, img29, img30, img31, img32]
  
+export const OurPortfolio = [img32, img34, img1, img24, img33, img7, img10, img17]

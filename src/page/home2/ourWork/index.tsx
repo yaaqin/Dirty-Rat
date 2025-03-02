@@ -1,13 +1,13 @@
-import { OurWorkData } from "./data";
+import { OurPortfolio } from "./data";
 import GradientBar from "./lineBar";
 
-const getRandomData = (data: any[], number: number) => {
-    const shuffled = [...data].sort(() => Math.random() - 0.5); // Acak data
-    return shuffled.slice(0, number); // Ambil 16 data acak
-};
+// const getRandomData = (data: any[], number: number) => {
+//     const shuffled = [...data].sort(() => Math.random() - 0.5); // Acak data
+//     return shuffled.slice(0, number); // Ambil 16 data acak
+// };
 
 export default function OurWork() {
-    const randomData = getRandomData(OurWorkData, 16);
+    // const randomData = getRandomData(OurWorkData, 8);
     return (
         <section className="bg-primaryColor text-white">
             <GradientBar />
@@ -17,7 +17,7 @@ export default function OurWork() {
             </section>
             <div className="flex flex-wrap justify-center p-4 w-full mt-4">
                 {/* Image Items */}
-                {randomData.map((data, index) => (
+                {OurPortfolio.map((data, index) => (
                     <div
                         key={index}
                         className="relative w-full sm:w-1/2 md:w-1/4 overflow-hidden"
