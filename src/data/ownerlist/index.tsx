@@ -18,7 +18,7 @@ export const ownerData = [
         profile: grants
     },
     {
-        nama: 'habib',
+        nama: 'mad',
         profile: habibs
     },
     {

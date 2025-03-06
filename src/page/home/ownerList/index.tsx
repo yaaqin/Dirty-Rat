@@ -13,9 +13,6 @@ const ProfileCard = ({ img, nama }: cardProps) => {
         alt="Profile"
         className="w-full h-60 object-cover transform transition duration-500 ease-in-out hover:scale-110"
       />
-      <div className="absolute top-0 left-0 px-6 py-2 bg-primaryColor rounded-br-xl text-white">
-        <p className="text-sm">COO</p>
-      </div>
       <div className="absolute bottom-0 right-0 px-6 py-3 bg-primaryColor rounded-tl-xl text-white">
         <p className="text-sm capitalize">{nama}</p>
       </div>
