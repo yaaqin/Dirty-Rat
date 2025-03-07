@@ -64,7 +64,7 @@ export default function MainComponent() {
                                 <a href="mailto:inquiries@dekogon.com" className="text-sm">inquiries@dirtyratstudio.com</a>
                             </div>
                             <div>
-                                <p className="font-semibold">Dekogon Studios</p>
+                                <p className="font-semibold">Dirty Rat Studios</p>
                                 <a href="https://www.dirtyratstudio.com" className="text-sm" target="_blank" rel="noopener noreferrer">www.dirtyratstudio.com</a>
                             </div>
                             <div>
