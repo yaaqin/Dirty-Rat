@@ -1,8 +1,9 @@
+@import url('@fortawesome/fontawesome-free/css/all.min.css');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-@import url('@fortawesome/fontawesome-free/css/all.min.css');
 
 @font-face {
     font-family: 'Baloo';
