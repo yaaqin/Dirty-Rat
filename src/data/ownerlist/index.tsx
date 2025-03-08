@@ -1,8 +1,8 @@
-import andis from '../../assets/img/ownerList/andi.jpg'
-import billis from '../../assets/img/ownerList/billy.png'
-import grants from '../../assets/img/ownerList/grant.jpg'
-import habibs from '../../assets/img/ownerList/habib.jpg'
-import christ from '../../assets/img/ownerList/christ.png'
+import andis from '../../assets/img/ownerList/1.andi.jpg'
+import billis from '../../assets/img/ownerList/2.billy.png'
+import grants from '../../assets/img/ownerList/4.grant.jpg'
+import habibs from '../../assets/img/ownerList/5.mad.jpg'
+import christ from '../../assets/img/ownerList/3.christ.png'
 
 export const ownerData = [
     {
@@ -14,6 +14,10 @@ export const ownerData = [
         profile: billis
     },
     {
+        nama: 'christ',
+        profile: christ
+    },
+    {
         nama: 'grant',
         profile: grants
     },
@@ -21,8 +25,5 @@ export const ownerData = [
         nama: 'mad',
         profile: habibs
     },
-    {
-        nama: 'christ',
-        profile: christ
-    }
+   
 ]
