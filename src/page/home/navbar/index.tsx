@@ -28,7 +28,7 @@ export default function MobileNavbar() {
         </div>
 
         {/* Logo */}
-        <div className="flex md:hidden items-center px-auto space-x-4 w-1/2 md:w-1/3 justify-start md:justify-center">
+        <div onClick={() => navigate('/')} className="flex md:hidden items-center px-auto space-x-4 w-1/2 md:w-1/3 justify-start md:justify-center">
           <div className="text-3xl md:text-6xl font-bold text-center font-baloo text-textColor">DIRTY RAT</div>
         </div>
 
@@ -55,7 +55,7 @@ export default function MobileNavbar() {
         </section>
       </nav>
       <section className="absolute hidden md:flex w-full justify-center z-0 -ml-16">
-        <img src={logo} className="h-64 mx-auto -mt-24 filter grayscale" />
+        <img  onClick={() => navigate('/')} src={logo} className="h-64 mx-auto -mt-24 filter grayscale cursor-pointer" />
       </section>
       {navOpen && <ComponentMobile />}
     </header>

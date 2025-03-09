@@ -13,7 +13,7 @@ export default function OurWork() {
             <GradientBar />
             <h6 className="text-center text-4xl mt-8 font-bold">Our Work</h6>
             <section className="w-full flex justify-center my-4">
-                <button className="p-3 px-8 bg-secondaryColor rounded-md mx-auto capitalize">View Our Full Artstation portfolio</button>
+                <button className="p-3 px-8 bg-secondaryColor border border-secondaryColor hover:bg-primaryColor hover:border-secondaryColor transition duration-300 rounded-md mx-auto capitalize">View Our Full Artstation portfolio</button>
             </section>
             <div className="flex flex-wrap justify-center p-4 w-full mt-4">
                 {/* Image Items */}
@@ -24,7 +24,7 @@ export default function OurWork() {
                     >
                         <img
                             src={data} 
-                            className="w-full h-80 object-cover  transition-transform transform hover:scale-110"
+                            className="w-full h-80 object-cover transition-transform transform hover:scale-110 duration-1000"
                         />
                     </div>
                 ))}
