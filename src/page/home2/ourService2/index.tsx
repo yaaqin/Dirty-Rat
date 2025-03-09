@@ -1,4 +1,4 @@
-import car2 from '../../../assets/img/ourService2/Ourservice_abitdepth (1) (2).jpg'
+import car2 from '../../../assets/img/ourService2/Ourservice_abitdepth (1) (3).jpg'
 
 export default function OurService2() {
     return (

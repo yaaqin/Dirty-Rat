@@ -3,7 +3,7 @@ import { OurServiceTypeList } from '../../../data/ourServicesType'
 export default function OurServicesType() {
     return (
         <section className='bg-primaryColor w-full flex justify-center pt-36'>
-            <div className="max-w-7xl grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 p-4">
+            <div style={{maxWidth: '90rem'}} className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
                 {OurServiceTypeList.map((category, index) => (
                     <div
                         key={index}
@@ -14,7 +14,7 @@ export default function OurServicesType() {
                             <img
                                 src={category.img}
                                 alt={category.name}
-                                className="w-full h-80 object-cover"
+                                className="w-full h-90 object-cover"
                             />
                             <div className="p-4 text-center">
                                 <h3 className="text-xs sm:text-sm md:text-xl lg:text-2xl font-bold">{category.name}</h3>
