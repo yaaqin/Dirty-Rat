@@ -1,7 +1,7 @@
-import chars from '../../assets/img/serviceType/character.jpg'
-import groom from '../../assets/img/serviceType/Emily_Hair_Preview_Thumbnail_04 (1).png'
-import env from '../../assets/img/serviceType/envi.jpg'
-import surface from '../../assets/img/serviceType/hardsurfacce.jpg'
+import chars from '../../assets/img/serviceType/CHARACTER (1).jpg'
+import groom from '../../assets/img/serviceType/GROOMING.jpg'
+import env from '../../assets/img/serviceType/ENVIRONMENT.jpg'
+import surface from '../../assets/img/serviceType/HARD SURFACE.jpg'
 
 export const OurServiceTypeList = [
     { 
