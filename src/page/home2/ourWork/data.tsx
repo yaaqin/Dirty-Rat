@@ -1,4 +1,4 @@
-import img1 from '../../../assets/img/ourWork/1.jpg'
+import img1 from '../../../assets/img/ourWork/gambarPertama.jpg'
 import img7 from '../../../assets/img/ourWork/2 (1).jpg'
 import img10 from '../../../assets/img/ourWork/3.jpg'
 import img17 from '../../../assets/img/ourWork/4.jpg'
