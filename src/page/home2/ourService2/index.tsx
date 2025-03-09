@@ -8,16 +8,16 @@ export default function OurService2() {
             <div className="absolute md:mb-0 text-end text-white ml-auto pt-36 h-screen z-20 flex flex-col px-4 md:px-16 items-end w-full">
                 <h2 className="text-3xl md:text-4xl font-bold mb-4">OUR SERVICES</h2>
                 <p className="text-base md:text-lg mb-6 w-full md:w-2/3 text-right text-shadow">
-                    We tailor our services to match your specific platforms, whether it's VR, Mobile, Broadcast, Console, or PC. We adapt to your preferred workflows, processes, styles, and methods to align seamlessly with your project and pipeline.
+                We build for your platform VR, Mobile, TV, Console, or PC. We work the way you work, fitting into your team’s habits, tools, and timelines to keep projects flowing smoothly.
                 </p>
-                <ul className="space-y-2 text-end w-full md:w-2/3 ml-auto" style={{ listStylePosition: 'inside', listStyleType: 'none' }}>
-                    <li className="flex justify-end text-base md:text-lg">Scene Layout and Design<span className="ml-2">•</span></li>
-                    <li className="flex justify-end text-base md:text-lg">Unreal and Unity Specialist<span className="ml-2">•</span></li>
-                    <li className="flex justify-end text-base md:text-lg">Asset Creation<span className="ml-2">•</span></li>
-                    <li className="flex justify-end text-base md:text-lg">Look Development<span className="ml-2">•</span></li>
-                    <li className="flex justify-end text-base md:text-lg">Hard Surface and Organic Modeling<span className="ml-2">•</span></li>
-                    <li className="flex justify-end text-base md:text-lg">3D Prototyping<span className="ml-2">•</span></li>
-                    <li className="flex justify-end text-base md:text-lg">PBR Texturing<span className="ml-2">•</span></li>
+                <ul className="space-y-2 text-end w-full md:w-2/3 ml-auto capitalize" style={{ listStylePosition: 'inside', listStyleType: 'none' }}>
+                    <li className="flex justify-end text-base md:text-lg">Game Ready & VFX character & creature modeling<span className="ml-2">•</span></li>
+                    <li className="flex justify-end text-base md:text-lg">Hair card & XGEN grooming<span className="ml-2">•</span></li>
+                    <li className="flex justify-end text-base md:text-lg">environment<span className="ml-2">•</span></li>
+                    <li className="flex justify-end text-base md:text-lg">hard surface modeling<span className="ml-2">•</span></li>
+                    <li className="flex justify-end text-base md:text-lg">VFX<span className="ml-2">•</span></li>
+                    <li className="flex justify-end text-base md:text-lg">collectibles<span className="ml-2">•</span></li>
+                    <li className="flex justify-end text-base md:text-lg">look development<span className="ml-2">•</span></li>
                 </ul>
             </div>
         </section>
