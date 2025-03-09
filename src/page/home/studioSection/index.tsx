@@ -1,4 +1,4 @@
-import ipMan from '../../../assets/img/ipMan.jpg'
+import ipMan from '../../../assets/studioSection/about us photo.jpg'
 import { useNavigate } from 'react-router-dom';
 
 const StudioSection = () => {
@@ -29,7 +29,7 @@ const StudioSection = () => {
             that will help us reach the goals together and to make new great titles
             enjoyed by millions of players worldwide.
           </p> */}
-          <button onClick={() => navigate('/contact')} className="bg-secondaryColor text-white px-6 py-2 rounded-md hover:bg-primaryColor transition duration-300">
+          <button onClick={() => navigate('/contact')} className="bg-secondaryColor border border-secondaryColor text-white px-6 py-2 rounded-md hover:bg-primaryColor transition duration-300">
             Get in Touch
           </button>
           {/* <div className="relative mt-12">

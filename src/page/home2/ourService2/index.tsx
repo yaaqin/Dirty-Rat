@@ -1,8 +1,8 @@
-import car2 from '../../../assets/img/ourService2/Ourservice_abitdepth (1).jpg'
+import car2 from '../../../assets/img/ourService2/Ourservice_abitdepth (1) (2).jpg'
 
 export default function OurService2() {
     return (
-        <section className='relative h-screen border border-red-600 z-0 -mt-4'>
+        <section className='relative h-screen z-0 -mt-4'>
             <img src={car2} alt="" className="min-h-screen w-full object-cover absolute z-0" />
             <section className='w-full h-36 absolute z-10 bg-gradient-to-b from-primaryColor to-transparent'></section>
             <div className="absolute md:mb-0 text-end text-white ml-auto pt-36 h-screen z-20 flex flex-col px-4 md:px-16 items-end w-full">
