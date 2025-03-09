@@ -18,7 +18,7 @@ const StudioSection = () => {
 
         {/* Right side image */}
         <div className="w-full md:w-1/2 pt-0 md:pt-80 z-10">
-          <h1 className="text-4xl sm:text-5xl md:text-8xl text-textSecondColor font-bold mb-6">
+          <h1 className="text-4xl sm:text-5xl md:text-7xl text-textSecondColor font-bold mb-6">
             ABOUT US
           </h1>
           <p className="text-lg sm:text-xl mb-12 text-textSecondColor">
