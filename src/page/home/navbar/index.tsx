@@ -3,6 +3,7 @@ import { FaFacebookF, FaInstagram, FaTwitter } from 'react-icons/fa';
 import { useNavigate } from 'react-router-dom';
 import ComponentMobile from './mobileNav';
 import logo from '../../../assets/img/logo2/dirty rat logo white.png'
+import logos from '../../../assets/img/logo2/mobile.png'
 import { artStation, facebook, instagram, twitter } from '../../../data/link';
 interface SocialIconProps {
   href: string;
@@ -29,7 +30,8 @@ export default function MobileNavbar() {
 
         {/* Logo */}
         <div onClick={() => navigate('/')} className="flex md:hidden items-center px-auto space-x-4 w-1/2 md:w-1/3 justify-start md:justify-center">
-          <div className="text-3xl md:text-6xl font-bold text-center font-baloo text-textColor">DIRTY RAT</div>
+          {/* <div className="text-3xl md:text-6xl font-bold text-center font-baloo text-textColor">DIRTY RAT</div> */}
+          <img  onClick={() => navigate('/')} src={logos} className="h-14 filter grayscale cursor-pointer" />
         </div>
 
 
