@@ -18,6 +18,13 @@ interface SocialIconProps {
 export default function MobileNavbar() {
   const navigate = useNavigate()
   const [navOpen, setNavOpen] = useState(false)
+  const handleLogoClick = () => {
+    if (location.pathname === "/") {
+      window.location.reload();
+    } else {
+      navigate("/");
+    }
+  };
   return (
     <header className="bg-primaryColor text-white py-4 md:py-8 px-6 md:px-16 font-droidSans">
       <nav className="mx-auto flex items-center justify-between">
@@ -57,7 +64,7 @@ export default function MobileNavbar() {
         </section>
       </nav>
       <section className="absolute hidden md:flex w-full justify-center z-0 -ml-16">
-        <img  onClick={() => navigate('/')} style={{marginTop: '-6.3rem'}} src={logo} className="h-64 mx-auto filter grayscale cursor-pointer" />
+        <img  onClick={handleLogoClick} style={{marginTop: '-6.3rem'}} src={logo} className="h-64 mx-auto filter grayscale cursor-pointer" />
       </section>
       {navOpen && <ComponentMobile />}
     </header>

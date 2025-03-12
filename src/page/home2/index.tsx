@@ -6,8 +6,12 @@ import OurService2 from './ourService2'
 import OurWork from './ourWork'
 import WelcomeSection from '../home/welcomeSection'
 import StudioSection from '../home/studioSection'
+import { useEffect } from 'react'
 
 export default function Home2() {
+  useEffect(() => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  }, []);
   return (
     <>
       <section className="fixed top-0 left-0 w-full z-50">

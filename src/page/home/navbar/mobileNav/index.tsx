@@ -1,5 +1,5 @@
-import React, { useEffect, useState } from 'react';
-import { FaInstagram, FaTwitter, FaArtstation, FaFacebookF } from 'react-icons/fa';
+import { useEffect, useState } from 'react';
+import { FaInstagram, FaTwitter, FaFacebookF } from 'react-icons/fa';
 import { useNavigate } from 'react-router-dom';
 import { artStation, facebook, instagram, twitter } from '../../../../data/link';
 import { SocialIcon } from '..';
