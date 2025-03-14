@@ -51,21 +51,21 @@ export default function MainComponent() {
         <section className='pt-10 md:pt-20 relative'>
             <img src={car2} alt="" className="min-h-screen w-full object-cover absolute z-0 filter blur-sm" />
             <section className='w-full flex justify-center pt-2'>
-                <div className="mt-8 md:mt-36 p-4 md:p-8 absolute flex flex-col md:flex-row gap-10 mx-auto w-full">
+                <div className="mt-8 md:mt-16 p-4 md:p-20 absolute flex flex-col md:flex-row md:items-center gap-10 mx-auto w-full">
                     <div className="px-0 md:p-8 text-white flex-1">
                         <p className='font-baloo text-4xl'>Contact Us</p>
-                        <div className="max-w-4xl mx-auto space-y-6 mt-4 md:mt-8">
+                        <div className="max-w-4xl mx-auto space-y-8 mt-4 md:mt-12 text-2xl">
                             <div>
                                 <p className="font-semibold">General Inquiries</p>
-                                <a href="mailto:contact@dekogon.com" className="text-sm">contact@dirtyratstudio.com</a>
+                                <a href="mailto:contact@dekogon.com" className="text-xl">contact@dirtyratstudio.com</a>
                             </div>
                             <div>
                                 <p className="font-semibold">New Business Inquiries</p>
-                                <a href="mailto:inquiries@dekogon.com" className="text-sm">inquiries@dirtyratstudio.com</a>
+                                <a href="mailto:inquiries@dekogon.com" className="text-xl">inquiries@dirtyratstudio.com</a>
                             </div>
                             <div>
                                 <p className="font-semibold">Dirty Rat Studios</p>
-                                <a href="https://www.dirtyratstudio.com" className="text-sm" target="_blank" rel="noopener noreferrer">www.dirtyratstudio.com</a>
+                                <a href="https://www.dirtyratstudio.com" className="text-xl" target="_blank" rel="noopener noreferrer">www.dirtyratstudio.com</a>
                             </div>
                             <div>
                                 <p className="font-semibold">Jakarta, Indonesia</p>

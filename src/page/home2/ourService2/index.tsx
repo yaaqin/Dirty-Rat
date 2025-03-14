@@ -10,14 +10,14 @@ export default function OurService2() {
                 <p className="text-base md:text-lg mb-6 w-full md:w-2/3 text-right text-shadow">
                     We build for your platform VR, Mobile, TV, Console, or PC. We work the way you work, fitting into your team’s habits, tools, and timelines, Like a rat discovering every path, Dirty Rat navigates the maze of 3D artistry, delivering creative solutions and unmatched expertise at every turn.</p>
                 <ul className="space-y-2 text-end w-full md:w-2/3 ml-auto capitalize" style={{ listStylePosition: 'inside', listStyleType: 'none' }}>
-                    <li className="flex justify-end text-base md:text-lg">Game Ready & VFX character<span className="ml-2">•</span></li>
-                    <li className="flex justify-end text-base md:text-lg">creature modeling<span className="ml-2">•</span></li>
+                    <li className="flex justify-end text-base md:text-lg">Character & Creature Modeling<span className="ml-2">•</span></li>
                     <li className="flex justify-end text-base md:text-lg">Hair card & XGEN grooming<span className="ml-2">•</span></li>
-                    <li className="flex justify-end text-base md:text-lg">environment<span className="ml-2">•</span></li>
-                    <li className="flex justify-end text-base md:text-lg">hard surface modeling<span className="ml-2">•</span></li>
-                    <li className="flex justify-end text-base md:text-lg">VFX<span className="ml-2">•</span></li>
-                    <li className="flex justify-end text-base md:text-lg">collectibles<span className="ml-2">•</span></li>
-                    <li className="flex justify-end text-base md:text-lg">look development<span className="ml-2">•</span></li>
+                    <li className="flex justify-end text-base md:text-lg">Hard Surface Modeling<span className="ml-2">•</span></li>
+                    <li className="flex justify-end text-base md:text-lg">Look Development<span className="ml-2">•</span></li>
+                    <li className="flex justify-end text-base md:text-lg">Environment<span className="ml-2">•</span></li>
+                    <li className="flex justify-end text-base md:text-lg">Props Modeling<span className="ml-2">•</span></li>
+                    <li className="flex justify-end text-base md:text-lg">PBR Texturing<span className="ml-2">•</span></li>
+                    <li className="flex justify-end text-base md:text-lg">VFX <span className="ml-2">•</span></li>
                 </ul>
             </div>
         </section>
