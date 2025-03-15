@@ -30,9 +30,9 @@ export default function MobileNavbar() {
       <nav className="mx-auto flex items-center justify-between">
         {/* Navbar Links */}
         <div className="hidden md:flex space-x-8 w-1/3">
-          <a className="text-lg text-[#6b7280] hover:text-white cursor-pointer hover:underline font-bold font-poppins" onClick={() => navigate('/')}>Home</a>
-          <a className="text-lg text-[#6b7280] hover:text-white cursor-pointer hover:underline font-bold font-poppins" onClick={() => navigate('/contact')}>Contact</a>
-          <a href={artStation} target="_blank" rel="noopener noreferrer" className="text-lg text-[#6b7280] cursor-pointer hover:text-white hover:underline font-bold font-poppins">Artstation</a>
+          <a className="text-lg text-[#6b7280] hover:text-white cursor-pointer hover:underline font-bold font-poppins" onClick={() => navigate('/')}>HOME</a>
+          <a className="text-lg text-[#6b7280] hover:text-white cursor-pointer hover:underline font-bold font-poppins" onClick={() => navigate('/contact')}>CONTACT</a>
+          <a href={artStation} target="_blank" rel="noopener noreferrer" className="text-lg text-[#6b7280] cursor-pointer hover:text-white hover:underline font-bold font-poppins">ARTSTATION</a>
         </div>
 
         {/* Logo */}
