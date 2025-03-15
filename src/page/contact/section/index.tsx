@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import './style.css'
-import car2 from '../../../assets/img/car2.png'
+import car2 from '../../../assets/img/contact us (1).jpg'
 import sendEmail from '../../../service/emailService';
 export default function MainComponent() {
     const [loading, setLoading] = useState(false)
@@ -53,7 +53,7 @@ export default function MainComponent() {
             <section className='w-full flex justify-center pt-2'>
                 <div className="mt-8 md:mt-16 p-4 md:p-20 absolute flex flex-col md:flex-row md:items-center gap-10 mx-auto w-full">
                     <div className="px-0 md:p-8 text-white flex-1">
-                        <p className='font-baloo text-4xl'>Contact Us</p>
+                        <p className='font-bold font-sans text-4xl'>CONTACT US</p>
                         <div className="max-w-4xl mx-auto space-y-8 mt-4 md:mt-12 text-2xl">
                             <div>
                                 <p className="font-semibold">General Inquiries</p>
