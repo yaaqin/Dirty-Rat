@@ -12,7 +12,7 @@ export default function OurWork() {
     return (
         <section className="bg-primaryColor text-white">
             <GradientBar />
-            <h6 className="text-center text-4xl mt-8 font-bold">Our Work</h6>
+            <h6 className="text-center text-4xl mt-8 font-bold">OUR WORK</h6>
             <section className="w-full flex justify-center my-4">
                 <a href={artStation} target="_blank" rel="noopener noreferrer" className="p-3 px-8 bg-secondaryColor border border-secondaryColor hover:bg-primaryColor hover:border-secondaryColor transition duration-300 rounded-md mx-auto capitalize">View Our Full Artstation portfolio</a>
             </section>
