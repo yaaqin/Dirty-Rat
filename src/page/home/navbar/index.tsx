@@ -29,10 +29,10 @@ export default function MobileNavbar() {
     <header className="bg-primaryColor text-white py-4 md:py-8 px-6 md:px-16 font-droidSans">
       <nav className="mx-auto flex items-center justify-between">
         {/* Navbar Links */}
-        <div className="hidden md:flex space-x-8 w-1/3">
-          <a className="text-lg text-[#6b7280] hover:text-white cursor-pointer hover:underline font-bold font-poppins" onClick={() => navigate('/')}>HOME</a>
-          <a className="text-lg text-[#6b7280] hover:text-white cursor-pointer hover:underline font-bold font-poppins" onClick={() => navigate('/contact')}>CONTACT</a>
-          <a href={artStation} target="_blank" rel="noopener noreferrer" className="text-lg text-[#6b7280] cursor-pointer hover:text-white hover:underline font-bold font-poppins">ARTSTATION</a>
+        <div className="hidden md:flex space-x-8 w-1/3 text-sm">
+          <a className="text-[#6b7280] hover:text-white cursor-pointer hover:underline font-bold font-poppins" onClick={handleLogoClick}>HOME</a>
+          <a className="text-[#6b7280] hover:text-white cursor-pointer hover:underline font-bold font-poppins" onClick={() => navigate('/contact')}>CONTACT</a>
+          <a href={artStation} target="_blank" rel="noopener noreferrer" className="text-[#6b7280] cursor-pointer hover:text-white hover:underline font-bold font-poppins">ARTSTATION</a>
         </div>
 
         {/* Logo */}
@@ -44,9 +44,9 @@ export default function MobileNavbar() {
 
         {/* Social Icons */}
         <div className="hidden md:flex justify-center md:justify-end gap-6 items-center w-1/3">
-          <SocialIcon href={twitter} icon={<FaTwitter size={24} />} />
-          <SocialIcon href={facebook} icon={<FaFacebookF size={24} />} />
-          <SocialIcon href={instagram} icon={<FaInstagram size={24} />} />
+          <SocialIcon href={twitter} icon={<FaTwitter size={20} />} />
+          <SocialIcon href={facebook} icon={<FaFacebookF size={20} />} />
+          <SocialIcon href={instagram} icon={<FaInstagram size={20} />} />
           {/* <SocialIcon href="#" icon={<FaYoutube size={24} />} /> */}
         </div>
 
