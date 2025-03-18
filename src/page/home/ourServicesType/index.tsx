@@ -2,7 +2,7 @@ import { OurServiceTypeList } from '../../../data/ourServicesType'
 
 export default function OurServicesType() {
     return (
-        <section className='bg-primaryColor w-full flex justify-center -mt-16 md:mt-0'>
+        <section className='bg-primaryColor w-full flex justify-center'>
             <div style={{maxWidth: '90rem'}} className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
                 {OurServiceTypeList.map((category, index) => (
                     <div
