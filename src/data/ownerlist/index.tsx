@@ -7,7 +7,8 @@ import christ from '../../assets/img/ownerList/3.christ.png'
 export const ownerData = [
     {
         nama: 'andi',
-        profile: andis
+        profile: andis,
+        ig: 'https://www.instagram.com/andi.x02/'
     },
     {
         nama: 'billy',
@@ -15,15 +16,18 @@ export const ownerData = [
     },
     {
         nama: 'christ',
-        profile: christ
+        profile: christ,
+        ig: 'https://www.instagram.com/christophergoh__/'
     },
     {
         nama: 'grant',
-        profile: grants
+        profile: grants,
+        ig: 'https://www.instagram.com/grantsutrisno/'
     },
     {
         nama: 'mad',
-        profile: habibs
+        profile: habibs,
+        ig: 'https://www.instagram.com/muhacheila/'
     },
    
 ]
